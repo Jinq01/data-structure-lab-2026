@@ -18,12 +18,34 @@ public:
 		gear = g;
 	}
 	void speedUp() { 
-		speed += gear * 5;
+		speed += 5;
 	}
 	void display() { 
 		cout << name << ": 기어 = " << gear << "단, 속도: " << speed << endl;
 	}
 	void whereAmI() {
 		cout << "객체 주소 = " << this << endl;
+	}
+};
+
+class SportsCar : public Car
+{
+public:
+	bool bTurbo;
+	SportsCar(int s, const char* n, int g, bool t) 
+		:Car(s, n, g), bTurbo(t) {
+		}
+	void setTurbo(bool bTur) { 
+		bTurbo = bTur;
+	}
+	void speedUp() {
+		if (bTurbo == 1) {
+			cout << "Turbo on " << endl;
+		}
+		else {
+			cout << "Turbo off " << endl;
+		}
+		if (bTurbo) speed += 20;
+		else Car::speedUp();
 	}
 };

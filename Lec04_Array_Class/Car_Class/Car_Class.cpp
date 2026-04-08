@@ -1,7 +1,8 @@
 #include "Car_Class.h"
 
-void main() {
-	Car mycar(10, "boong", 1);
+int main() {
+
+	SportsCar mycar(10, "boong", 1, 1);
 
 	mycar.display();
 	mycar.whereAmI();
