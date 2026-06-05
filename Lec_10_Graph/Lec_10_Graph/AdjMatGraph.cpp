@@ -1,4 +1,4 @@
-#include "AdjMatGraph.h"
+/*#include "AdjMatGraph.h"
 #include "srchAMGraph.h"
 
 int main() {
@@ -52,4 +52,4 @@ int main() {
 	printf("\n");
 
 	return 0;
-}
+}*/
